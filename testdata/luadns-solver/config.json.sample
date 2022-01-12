@@ -1,0 +1,8 @@
+{
+    "username": "test@example.com",
+    "ttl": 300,
+    "apiKeySecretRef": {
+        "name": "luadns-api-key",
+        "key": "key"
+    }
+}

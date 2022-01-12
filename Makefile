@@ -1,7 +1,8 @@
 OS ?= $(shell go env GOOS)
 ARCH ?= $(shell go env GOARCH)
 
-IMAGE_NAME := "webhook"
+PROVIDER := "cert-manager-webhook-luadns"
+IMAGE_NAME := "trietop/$(PROVIDER)"
 IMAGE_TAG := "latest"
 
 OUT := $(shell pwd)/_out
@@ -32,7 +33,7 @@ build:
 .PHONY: rendered-manifest.yaml
 rendered-manifest.yaml:
 	helm template \
-	    --name example-webhook \
+	    $(PROVIDER) \
         --set image.repository=$(IMAGE_NAME) \
         --set image.tag=$(IMAGE_TAG) \
-        deploy/example-webhook > "$(OUT)/rendered-manifest.yaml"
+        deploy/$(PROVIDER) > "$(OUT)/rendered-manifest.yaml"
