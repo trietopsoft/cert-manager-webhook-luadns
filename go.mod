@@ -4,11 +4,10 @@ go 1.17
 
 require (
 	github.com/jetstack/cert-manager v1.2.0
-	github.com/miekg/dns v1.1.31
-	github.com/stretchr/testify v1.6.1
 	k8s.io/apiextensions-apiserver v0.19.0
 	k8s.io/apimachinery v0.19.0
 	k8s.io/client-go v0.19.0
+	k8s.io/klog/v2 v2.3.0
 )
 
 require (
@@ -22,7 +21,7 @@ require (
 	github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/emicklei/go-restful v2.9.5+incompatible // indirect
+	github.com/emicklei/go-restful v2.16.0+incompatible // indirect
 	github.com/evanphx/json-patch v4.9.0+incompatible // indirect
 	github.com/go-logr/logr v0.2.1-0.20200730175230-ee2de8da5be6 // indirect
 	github.com/go-openapi/jsonpointer v0.19.3 // indirect
@@ -43,12 +42,12 @@ require (
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/mailru/easyjson v0.7.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
+	github.com/miekg/dns v1.1.31 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/onsi/gomega v1.10.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.7.1 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.10.0 // indirect
@@ -74,11 +73,9 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20200605160147-a5ece683394c // indirect
 	k8s.io/api v0.19.0 // indirect
 	k8s.io/apiserver v0.19.0 // indirect
 	k8s.io/component-base v0.19.0 // indirect
-	k8s.io/klog/v2 v2.3.0 // indirect
 	k8s.io/kube-aggregator v0.19.0 // indirect
 	k8s.io/kube-openapi v0.0.0-20200805222855-6aeccd4b50c6 // indirect
 	k8s.io/utils v0.0.0-20200729134348-d5654de09c73 // indirect
